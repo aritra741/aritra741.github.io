@@ -211,10 +211,7 @@ export default function Portfolio() {
           {/* Clicking on this button should download the file at public/cv.pdf */}
           <Button
             onClick={() => {
-              const link = document.createElement("a");
-              link.href = "/cv.pdf";
-              link.download = "cv.pdf";
-              link.click();
+              window.open("/CV.pdf", "_blank");
             }}
           >
             Download CV
